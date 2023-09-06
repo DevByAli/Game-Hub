@@ -3,17 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import platforms from "../data/platform";
 import apiClient from "../services/api-client";
 import { Platform } from "./useGames";
-import { FetchResponse } from "./useData";
-
-// interface Platform {
-//   id: number;
-//   name: string;
-//   slug: string;
-// }
-
-// const usePlatform = () => useData<Platform>("/platforms/lists/parents");
-
-// const usePlatform = () => ({ data: platforms, error: null, isLoading: false });
+import { FetchResponse } from "../services/api-client";
 
 const usePlatform = () =>
   useQuery({

@@ -6,11 +6,10 @@ import GenreList from "./components/GenreList";
 import NavBar from "./components/NavBar";
 import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SotSelector";
-import { Platform } from "./hooks/usePlatforms";
 
 export interface GameQuery {
   genreId?: number;
-  platform: Platform | null;
+  platformId?: number;
   sortOrder: string;
   searchText: string;
 }
@@ -21,7 +20,7 @@ function App() {
   const resetState = () => {
     setGameQuery({
       genreId: undefined,
-      platform: null,
+      platformId: undefined,
       sortOrder: "Relevance",
       searchText: "",
     });
@@ -57,9 +56,9 @@ function App() {
         <Flex paddingLeft={2} marginBottom={5}>
           <Box marginRight={5}>
             <PlatformSelector
-              selectedPlatform={gameQuery.platform}
+              selectedPlatformId={gameQuery.platformId}
               onSelectPlatform={(platform) =>
-                setGameQuery({ ...gameQuery, platform: platform })
+                setGameQuery({ ...gameQuery, platformId: platform.id })
               }
             />
           </Box>

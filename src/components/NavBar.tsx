@@ -18,7 +18,6 @@ const NavBar = ({ onClickLogo, onSearch }: Prop) => {
         borderRadius="35px"
         src={logo}
         boxSize="70px"
-        marginRight={8}
       ></Image>
       <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />

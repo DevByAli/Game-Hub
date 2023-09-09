@@ -5,10 +5,9 @@ import SearchInput from "./SearchInput";
 
 interface Prop {
   onClickLogo: () => void;
-  onSearch: (searchText: string) => void;
 }
 
-const NavBar = ({ onClickLogo, onSearch }: Prop) => {
+const NavBar = ({ onClickLogo }: Prop) => {
   return (
     <HStack padding="10px">
       <Image
@@ -19,7 +18,7 @@ const NavBar = ({ onClickLogo, onSearch }: Prop) => {
         src={logo}
         boxSize="70px"
       ></Image>
-      <SearchInput onSearch={onSearch} />
+      <SearchInput />
       <ColorModeSwitch />
     </HStack>
   );

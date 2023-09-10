@@ -1,9 +1,8 @@
 import { HStack, Image } from "@chakra-ui/react";
+import useGameQueryStore from "../Store";
 import logo from "../assets/logo.webp";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
-import useGameQueryStore from "../Store";
-
 
 const NavBar = () => {
   const resetState = useGameQueryStore((s) => s.resetState);
@@ -11,8 +10,8 @@ const NavBar = () => {
     <HStack padding="10px">
       <Image
         cursor={"pointer"}
-        onClick={resetState}
         backgroundColor="#1a202c"
+        onClick={resetState}
         borderRadius="35px"
         src={logo}
         boxSize="70px"

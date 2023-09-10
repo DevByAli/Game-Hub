@@ -12,8 +12,9 @@ interface Props {
 const GameCard = ({ game }: Props) => {
   return (
     <Card>
-      <Box overflow="hidden">
+      <Box overflow={"hidden"}>
         <Image
+          width="100%"
           _hover={{ transform: "scale(1.1)", transition: "transform 0.8s" }}
           src={getCroppedImageUrl(game.background_image)}
         ></Image>

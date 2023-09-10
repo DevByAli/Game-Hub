@@ -1,6 +1,6 @@
 import { useQueryClient } from "@tanstack/react-query";
 import { FetchResponse } from "../services/api-client";
-import { Platform } from "./usePlatforms";
+import { Platform } from "../entities/Platform";
 
 const usePlatform = (id?: number) => {
   const queryClient = useQueryClient();

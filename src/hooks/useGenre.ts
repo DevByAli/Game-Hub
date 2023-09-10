@@ -1,6 +1,6 @@
 import { useQueryClient } from "@tanstack/react-query";
 import { FetchResponse } from "../services/api-client";
-import { Genre } from "../entities/Genre";
+import Genre from "../entities/Genre";
 
 const useGenre = (id?: number) => {
   const queryClient = useQueryClient();

@@ -7,6 +7,7 @@ import theme from "./theme.ts";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import router from "./router/router.tsx";
+import "bootstrap/dist/css/bootstrap.css";
 
 const queryClient = new QueryClient();
 

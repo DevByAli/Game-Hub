@@ -1,7 +1,7 @@
 import { HStack, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import useGameQueryStore from "../Store";
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
@@ -12,11 +12,11 @@ const NavBar = () => {
       <Link to="/">
         <Image
           cursor={"pointer"}
-          backgroundColor="#1a202c"
           onClick={resetState}
           borderRadius="35px"
           src={logo}
-          boxSize="70px"
+          maxWidth="70px"
+          width="100%"
           objectFit={"cover"}
         ></Image>
       </Link>

@@ -1,5 +1,11 @@
 # React + TypeScript + Vite
 
+Show the games and their details.
+Use the chakra UI as the frontend library.
+Use react query for caching game data.
+Filter games based on platform, genre, and much more.
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
